@@ -1,0 +1,99 @@
+body {
+  background: black;
+}
+
+main {
+  display: flex;
+  background: white;
+  height: 48em;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 6;
+  font-size: 4em;
+  margin: .1em;
+  letter-spacing: .05em;
+}
+
+/* clear row margins */
+.row {
+  margin: 0px !important;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: rgba(0,0,0,.4);
+  display: inline-block;
+  margin: .1em;
+
+}
+
+._header {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 8em;
+  background-color: white;
+  text-align: center;
+}
+
+
+._footer {
+  background: white;
+  width: 80%;
+  height: 8em;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline-block;
+  text-align: center;
+}
+
+._button {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  height: 2.5em;
+  width: 10em;
+  border: .2em solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  line-height: 2;
+  cursor: pointer;
+}
+
+._left {
+  background: green;
+  height: 100%;
+  display: flex;
+}
+
+._right {
+  background: pink;
+  height: 100%;
+  display: flex;
+}
+
+._mid {
+  background: orange;
+  height: 100%;
+  display: flex;
+}
+
+.fa {
+  font-size: 2em;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+._hide {
+  opacity: 0;
+}

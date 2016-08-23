@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Mission Bicycle</title>
+  <!--   import bootstrap and font awesome  -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!--   import google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet"/>
+  <!-- import local stylesheet -->
+  <link href="./style.css" rel="stylesheet"/>
+
+  <!--   bootstrap and angular scripts -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+
+  <!-- local scripts -->
+  <script src="./app.js"></script>
+
+</head>
+
+  <body ng-app="missBike">
+
+  <div ng-controller="MissionBike">
+    <div class ="_header">
+      <h1>{{title.main}}</h1>
+      <h2>{{title.sub}}</h1>
+    </div>
+
+    <main>
+      <div class="row">
+        <div ng-class="active == 1 ? '_hide' : ''"
+             class="col-md-1 _left">
+          <i ng-click = "clickLeft()"
+          class="fa fa-chevron-left"></i>
+        </div>
+        <div class="col-md-10 _mid">{{data}}</div>
+        <div ng-class="active == 5? '_hide' : ''"
+          class="col-md-1 _right">
+          <i ng-click="clickRight()"
+          class="fa fa-chevron-right"></i>
+        </div>
+      </div>
+    </main>
+
+    <div class = "_footer">
+      <div class="row">
+        <div class="_button">
+          Quick View
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
