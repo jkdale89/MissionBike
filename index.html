@@ -38,7 +38,16 @@
           <i ng-click = "clickLeft()"
           class="fa fa-chevron-left"></i>
         </div>
-        <div class="col-md-10 _mid">{{data}}</div>
+        <div class="col-md-10 _mid">
+          <div
+            ng-show = "active == $index + 1"
+            ng-repeat="bike in data"
+            ng-style="{'background-image': 'url(' + bike.images[0].main-view + ')'}"
+            class = "bikeView">
+            <p class = "model">Model No. {{$index + 1}}</p>
+            <p class = "name">{{bike.name}}</p>
+          </div>
+        </div>
         <div ng-class="active == 5? '_hide' : ''"
           class="col-md-1 _right">
           <i ng-click="clickRight()"

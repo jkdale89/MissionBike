@@ -11,25 +11,36 @@ main {
   margin-right: 10%;
 }
 
+p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0em;
+    -webkit-margin-end: 0em;
+}
+
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 6;
   font-size: 4em;
   margin: .1em;
   letter-spacing: .05em;
+  text-transform: uppercase;
 }
 
 /* clear row margins */
 .row {
   margin: 0px !important;
+  width: 100% !important;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', serif;
   font-size: 2em;
   color: rgba(0,0,0,.4);
   display: inline-block;
   margin: .1em;
+  text-transform: uppercase;
 
 }
 
@@ -82,6 +93,7 @@ h2 {
   background: orange;
   height: 100%;
   display: flex;
+  min-width: 83.3%;
 }
 
 .fa {
@@ -96,4 +108,32 @@ h2 {
 
 ._hide {
   opacity: 0;
+}
+
+.bikeView {
+  width: 100%;
+  text-align: center;
+  display: block;
+  background-image: url()
+}
+
+p.model {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  font-family: "Montserrat" sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: -.75em;
+  margin-top: .75em;
+}
+
+p.name {
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  font-family: "Playfair Display", serif;
+  width: 100%;
+  font-style: italic;
+  text-transform: uppercase;
 }

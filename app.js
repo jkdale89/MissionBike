@@ -20,6 +20,12 @@ app.controller('MissionBike',  function($scope, $http) {
 
   $scope.data = {};
   $http.get('http://seq-front-end-assessment.s3-website-us-west-2.amazonaws.com/catalog.json').then(function(data){
-    $scope.data = data.data;
+    // console.log(data);
+    let bikes = data.data.products;
+    for(let i = 0; i < bikes.length; i++){
+      bikes[i].name = bikes[i].name.split(" ").splice(3,5).join(" ");
+    }
+    $scope.data = bikes;
   });
+
 });
